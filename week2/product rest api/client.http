@@ -1,0 +1,68 @@
+### read all users
+GET http://localhost:6767/users-api/users
+###read users by id
+GET http://localhost:6767/users/1  
+### get doest not support body
+
+
+#create new user
+POST http://localhost:6767/users-api/users
+Content-Type: application/json
+
+{
+    "id":3,
+    "name":"MAX",
+    "age":19
+}
+
+###
+PUT http://localhost:6767/users-api/users
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"YUK",
+    "age":20
+}
+### delete does not have body
+DELETE http://localhost:6767/users-api/users/2
+
+
+
+
+
+
+### read all users
+GET http://localhost:2525/products
+###read users by id
+GET http://localhost:2525/products
+### get doest not support body
+
+
+#create new user
+POST http://localhost:2525/products
+Content-Type: application/json
+
+{
+    "pid":1,
+    "pname":"Shoe",
+    "brand":"Puma",
+   
+}
+
+###
+PUT http://localhost:2525/products
+Content-Type: application/json
+
+{
+    "id":1,
+    "pname":"Bag",
+    "brand":"Wildcraft",
+    "price":2000
+}
+### delete does not have body
+DELETE http://localhost:2525/products
+
+
+
+
